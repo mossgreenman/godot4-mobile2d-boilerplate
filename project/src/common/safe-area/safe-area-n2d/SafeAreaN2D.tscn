@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cys0wjgw5g6hy"]
+
+[ext_resource type="Script" path="res://project/src/common/safe-area/safe-area-n2d/SafeAreaN2D.gd" id="1"]
+
+[node name="SafeAreaN2D" type="Node2D"]
+script = ExtResource("1")

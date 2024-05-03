@@ -1,0 +1,11 @@
+res://default_env.tres
+res://project/src/scene/main/Main.tscn
+res://project/src/scene/creep/Creep1.tscn
+res://project/src/scene/creep/Creep2.tscn
+res://project/src/scene/guide/Guide.tscn
+res://project/src/scene/hud/HUD.tscn
+res://project/src/common/ads-adr/AdsAdr.tscn
+res://project/src/common/game-viewport/GameViewport.tscn
+res://project/src/common/safe-area/safe-area-ctrl/SafeAreaCtrl.tscn
+res://project/src/common/safe-area/safe-area-n2d/SafeAreaN2D.tscn
+res://project/src/level/level1/Level1.tscn

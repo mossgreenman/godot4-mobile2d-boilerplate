@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b71i0emwcjgfw"]
+
+[ext_resource type="Texture2D" uid="uid://cxkg887yc1acw" path="res://project/src/scene/creep/sprite/creep2-2.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://p1tv54wyd1rw" path="res://project/src/scene/creep/sprite/creep2-1.png" id="2"]
+[ext_resource type="Script" path="res://project/src/scene/creep/Creep.gd" id="3"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
+}]
+
+[node name="Creep2" type="RigidBody2D"]
+collision_mask = 0
+gravity_scale = 0.0
+script = ExtResource("3")
+
+[node name="AnimSprite" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.16, 0.16)
+sprite_frames = SubResource("1")
+
+[node name="Coll" type="CollisionPolygon2D" parent="."]
+rotation = 1.5708
+polygon = PackedVector2Array(-60, 0.000217199, -54.9999, 15.0002, -40.9999, 27.0001, 15.0001, 27.9999, 44.0002, 45.9998, 53.0001, 32.9998, 51.9999, -31.0002, 45.9998, -46.0002, 13.9999, -28.0001, -36.0001, -27.9999, -52.0001, -20.9998)
+
+[node name="VisNotify" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(-5.24521e-06, -2.5)
+scale = Vector2(5.3, 5.75)
+
+[connection signal="screen_exited" from="VisNotify" to="." method="destroy_mob"]

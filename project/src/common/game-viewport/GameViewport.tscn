@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://blkrw6qo2c0p"]
+
+[node name="GameViewport" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(540, 960)
+
+[node name="SubViewport" type="SubViewport" parent="."]
+size = Vector2i(1920, 1080)

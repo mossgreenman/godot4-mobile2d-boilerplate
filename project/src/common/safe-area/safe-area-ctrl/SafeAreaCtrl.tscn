@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dq7h7ri70iqdw"]
+
+[ext_resource type="Script" path="res://project/src/common/safe-area/safe-area-ctrl/SafeAreaCtrl.gd" id="1"]
+
+[node name="SafeAreaCtrl" type="MarginContainer"]
+custom_minimum_size = Vector2(1080, 1920)
+script = ExtResource("1")

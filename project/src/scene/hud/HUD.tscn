@@ -1,0 +1,188 @@
+[gd_scene load_steps=12 format=3 uid="uid://dvann1ew5qmb5"]
+
+[ext_resource type="FontFile" uid="uid://xyyvkxkerboq" path="res://project/src/style/font/Dogfiles.ttf" id="1"]
+[ext_resource type="Script" path="res://project/src/scene/hud/HUD.gd" id="2"]
+[ext_resource type="StyleBox" path="res://project/src/scene/hud/style/BackBtnNormalStyle.tres" id="3"]
+[ext_resource type="StyleBox" path="res://project/src/scene/hud/style/StartBtnNormalStyle.tres" id="4"]
+
+[sub_resource type="FontFile" id="8"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[sub_resource type="FontFile" id="9"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[sub_resource type="Theme" id="3"]
+Button/colors/font_color = Color(1, 1, 1, 1)
+Button/colors/font_color_disabled = Color(1, 1, 1, 1)
+Button/colors/font_color_hover = Color(1, 1, 1, 1)
+Button/colors/font_color_pressed = Color(1, 1, 1, 1)
+Button/colors/font_disabled_color = Color(1, 1, 1, 1)
+Button/colors/font_focus_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_color = Color(1, 1, 1, 1)
+Button/colors/font_hover_pressed_color = Color(1, 1, 1, 1)
+Button/colors/font_outline_color = Color(1, 1, 1, 1)
+Button/colors/font_pressed_color = Color(1, 1, 1, 1)
+Button/constants/h_separation = 2
+Button/fonts/font = null
+Button/styles/disabled = ExtResource("4")
+Button/styles/focus = ExtResource("4")
+Button/styles/hover = ExtResource("4")
+Button/styles/normal = ExtResource("4")
+Button/styles/pressed = ExtResource("4")
+
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[sub_resource type="Shortcut" id="5"]
+
+[sub_resource type="Theme" id="10"]
+Button/colors/font_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_color_disabled = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_color_focus = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_color_hover = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_color_pressed = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_disabled_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_focus_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_hover_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_hover_pressed_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_outline_color = Color(1, 0.388235, 0.278431, 1)
+Button/colors/font_pressed_color = Color(1, 0.388235, 0.278431, 1)
+Button/styles/disabled = ExtResource("3")
+Button/styles/focus = ExtResource("3")
+Button/styles/hover = ExtResource("3")
+Button/styles/normal = ExtResource("3")
+Button/styles/pressed = ExtResource("3")
+
+[sub_resource type="FontFile" id="11"]
+fallbacks = Array[Font]([ExtResource("1")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/100/0 = Vector2(0, 0)
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+cache/0/100/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/100/0/kerning_overrides/100/0 = Vector2(0, 0)
+
+[node name="HUD" type="Node2D"]
+script = ExtResource("2")
+
+[node name="ScoreLbl" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 240.0
+offset_top = 2.0
+offset_right = 840.0
+offset_bottom = 201.0
+theme_override_colors/font_color = Color(1, 0.388235, 0.278431, 1)
+theme_override_fonts/font = SubResource("8")
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MsgLbl" type="Label" parent="."]
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 82.0
+offset_top = 405.0
+offset_right = 1012.0
+offset_bottom = 564.0
+theme_override_colors/font_color = Color(1, 0.388235, 0.278431, 1)
+theme_override_fonts/font = SubResource("9")
+theme_override_font_sizes/font_size = 100
+text = "Enjoy!!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartBtn" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 359.0
+offset_top = 1200.0
+offset_right = 759.0
+offset_bottom = 1400.0
+theme = SubResource("3")
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 100
+shortcut = SubResource("5")
+text = "Start"
+
+[node name="BackBtn" type="Button" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 359.0
+offset_top = 1500.0
+offset_right = 759.0
+offset_bottom = 1700.0
+theme = SubResource("10")
+theme_override_colors/font_color = Color(1, 0.388235, 0.278431, 1)
+theme_override_fonts/font = SubResource("11")
+theme_override_font_sizes/font_size = 100
+shortcut = SubResource("5")
+text = "Back"
+
+[node name="MsgTimer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="pressed" from="StartBtn" to="." method="on_start_game"]
+[connection signal="pressed" from="BackBtn" to="." method="to_main"]
+[connection signal="timeout" from="MsgTimer" to="." method="hide_msg"]

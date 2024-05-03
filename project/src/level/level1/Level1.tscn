@@ -1,0 +1,55 @@
+[gd_scene load_steps=8 format=3 uid="uid://dd0s7iygo2gg6"]
+
+[ext_resource type="PackedScene" path="res://project/src/scene/player/Player.tscn" id="1"]
+[ext_resource type="Script" path="res://project/src/level/level1/Level1.gd" id="2"]
+[ext_resource type="PackedScene" uid="uid://dvann1ew5qmb5" path="res://project/src/scene/hud/HUD.tscn" id="4"]
+[ext_resource type="PackedScene" path="res://project/src/scene/background/Bg.tscn" id="5"]
+[ext_resource type="PackedScene" path="res://project/src/scene/sound-effect/SoundEffect.tscn" id="6"]
+[ext_resource type="PackedScene" uid="uid://cys0wjgw5g6hy" path="res://project/src/common/safe-area/safe-area-n2d/SafeAreaN2D.tscn" id="7"]
+
+[sub_resource type="Curve2D" id="1"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1080, 0, 0, 0, 0, 0, 1080, 1920, 0, 0, 0, 0, 0, 1920, 0, 0, 0, 0, 0, 0)
+}
+point_count = 5
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("2")
+
+[node name="Bg" parent="." instance=ExtResource("5")]
+layout_mode = 3
+anchors_preset = 15
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SafeAreaN2D" parent="." instance=ExtResource("7")]
+
+[node name="MobPath" type="Path2D" parent="SafeAreaN2D"]
+curve = SubResource("1")
+
+[node name="MobSpawnLocation" type="PathFollow2D" parent="SafeAreaN2D/MobPath"]
+
+[node name="StartPos" type="Marker2D" parent="SafeAreaN2D"]
+
+[node name="HUD" parent="SafeAreaN2D" instance=ExtResource("4")]
+z_index = 1
+
+[node name="Player" parent="." instance=ExtResource("1")]
+position = Vector2(540, 900)
+
+[node name="Timer" type="Node2D" parent="."]
+
+[node name="SpawnMob" type="Timer" parent="Timer"]
+
+[node name="CountScore" type="Timer" parent="Timer"]
+wait_time = 2.0
+
+[node name="StartGame" type="Timer" parent="Timer"]
+wait_time = 2.0
+one_shot = true
+
+[node name="SoundEffect" parent="." instance=ExtResource("6")]
+
+[connection signal="timeout" from="Timer/SpawnMob" to="." method="spawn_mob"]
+[connection signal="timeout" from="Timer/CountScore" to="." method="count_score"]
+[connection signal="timeout" from="Timer/StartGame" to="." method="start_game"]
