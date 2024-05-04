@@ -1,11 +1,13 @@
 extends Node2D
 
 var safe_area  = DisplayServer.get_display_safe_area()
-var window_size = DisplayServer.window_get_size_with_decorations()
+var window_size = DisplayServer.window_get_size()
 
 func _ready():
-	change_portrait()
+	#change_portrait()
+	pass
 
+# Portrait mode
 func change_portrait():
 	var unit_x = window_size.x / 9
 	var unit_y = window_size.y / 16
@@ -19,6 +21,7 @@ func change_portrait():
 		var pos_x = max(diff_x, safe_area.position.x)
 		global_position = Vector2(pos_x, safe_area.position.y)
 
+# Landscape mode
 func change_landscape():
 	var unit_x = window_size.x / 16
 	var unit_y = window_size.y / 9
